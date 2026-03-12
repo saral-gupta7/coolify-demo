@@ -8,4 +8,5 @@ RUN bun install --frozen-lockfile
 
 COPY . .
 
-EXPOSE 6000 ENTRYPOINT ["bun", "run", "index.ts"]
+EXPOSE 6000 
+ENTRYPOINT ["bun", "run", "index.ts"]
