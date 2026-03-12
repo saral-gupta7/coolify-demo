@@ -12,6 +12,10 @@ app.get("/deploy", (req, res) => {
   res.json({ messsage: "This is the message form coolify deploy route" });
 });
 
+app.get("/health", (req, res) => {
+  res.json({ messsage: "This is the message form coolify health route" });
+});
+
 app.listen(PORT, () => {
   console.log(`The server is listening on PORT:${PORT}`);
 });
